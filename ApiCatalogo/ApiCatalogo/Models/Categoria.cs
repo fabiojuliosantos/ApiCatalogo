@@ -22,4 +22,5 @@ public class Categoria
     public string? ImagemUrl { get; set; }
 
     public ICollection<Produto>? Produtos { get; set; }
+
 }
