@@ -1,6 +1,8 @@
-## Estrutura do projeto
+## :open_file_folder: Estrutura do projeto
 
-|---|---|
-||---|
+|Diretório|Descrição|
+|:---:|:---:|
 |ApiCatalogo| Controllers da API|
-|Catalogo.Domain|Itens de dom�nio do projeto(Models e afins)|
+|Models|Itens de domínio do projeto(Models e afins)|
+|Controllers *[Em Desenvolvimento]*|*Em Deselvovimento*|
+|DbContext|Contexto do Banco de dados da aplicação|

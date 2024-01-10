@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System.Collections.Generic;
 
 #nullable disable
 
@@ -8,9 +9,9 @@ namespace APICatalogo.Migrations
     {
         protected override void Up(MigrationBuilder mb)
         {
-            mb.Sql("Insert into Categorias(Nome, ImagemUrl) Values('Bebidas','bebidas.jpg')");
-            mb.Sql("Insert into Categorias(Nome, ImagemUrl) Values('Lanches','lanches.jpg')");
-            mb.Sql("Insert into Categorias(Nome, ImagemUrl) Values('Sobremesas','sobremesas.jpg')");
+            mb.Sql("INSERT INTO CATEGORIAS(NOME, IMAGEMURL) VALUES('laptop', 'https://bit.ly/3NWzsi4')");
+            mb.Sql("INSERT INTO CATEGORIAS(NOME, IMAGEMURL) VALUES('smartphone', 'https://bit.ly/3RPQu2t')");
+            mb.Sql("INSERT INTO CATEGORIAS(NOME, IMAGEMURL) VALUES('perifericos', 'https://bit.ly/47wodUu')");
         }
 
         protected override void Down(MigrationBuilder mb)

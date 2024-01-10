@@ -1,5 +1,5 @@
 # ApiCatalogo
-## RepositÛrio de uma Api de Cat·logo
+## Reposit√≥rio de uma Api de Cat√°logo
 
 #### Tecnologias Utilizadas:
 
@@ -7,3 +7,10 @@
 - Entity Framework Core;
 - Sql Server;
 - Swagger
+
+#### Rotas da API 
+*Em Desenvolvimento*
+
+|Rota|Funcionalidade
+|:---:|:---:|
+|-----|----|
