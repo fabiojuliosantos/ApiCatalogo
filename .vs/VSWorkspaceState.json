@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ApiCatalogo",
+    "\\ApiCatalogo\\ApiCatalogo"
   ],
-  "SelectedNode": "\\ApiCatalogo.sln",
+  "SelectedNode": "\\ApiCatalogo\\ApiCatalogo\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
