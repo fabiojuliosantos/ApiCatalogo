@@ -1,17 +1,21 @@
 using APICatalogo.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+        options.JsonSerializerOptions
+               .ReferenceHandler = ReferenceHandler.IgnoreCycles); //=> Tratamento de exceção de referência cíclica
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 string SqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-                    options.UseSqlServer(SqlConnection));
+                 options.UseSqlServer(SqlConnection));
 
 var app = builder.Build();
 
